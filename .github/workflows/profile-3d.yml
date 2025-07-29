@@ -23,7 +23,7 @@ jobs:
         USERNAME: ${{ github.repository_owner }}
 
     - name: Push SVGs to branch
-      uses: crazy-max/ghaction-github-pages@v3.1.0
+      uses: crazy-max/ghaction-github-pages@v4.2.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
