@@ -16,7 +16,7 @@ jobs:
 
       # Generates the GitHub Profile Trophies
       - name: Generate GitHub Trophies
-        uses: soulteary/profile-trophy-action@main
+        uses: soulteary/github-profile-trophy-action@v1.0.0
         with:
           username: ${{ github.repository_owner }}
           token: ${{ secrets.GITHUB_TOKEN }}
