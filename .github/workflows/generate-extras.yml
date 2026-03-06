@@ -1,0 +1,56 @@
+name: Generate Profile Extras
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight
+  workflow_dispatch:
+
+jobs:
+  generate-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Generates the GitHub Profile Trophies
+      - name: Generate GitHub Trophies
+        uses: soulteary/profile-trophy-action@main
+        with:
+          username: ${{ github.repository_owner }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          theme: nord
+          no-bg: true
+          no-frame: true
+          column: -1
+          output: generated/github-trophies.svg
+
+      # Generates the Streak Stats SVG
+      - name: Generate Streak Stats
+        uses: muhammad-fiaz/github-readme-streak-stats@v1.0.1
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THEME: shadow-green
+          HIDE_BORDER: "true"
+          MODE: weekly
+          OUTPUT_PATH: generated/github-streak-stats.svg
+
+      # Generates the classic GitHub Readme Stats SVG
+      - name: Generate GitHub Stats
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&theme=shadow_green&hide_border=true
+          path: generated/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push generated SVGs to branch
+        uses: crazy-max/ghaction-github-pages@v4.2.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          target_branch: output-extras
+          build_dir: generated
+          keep_history: true
