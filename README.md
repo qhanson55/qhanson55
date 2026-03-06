@@ -10,5 +10,5 @@ Fun Fact: Before switching gears (pun intended) into software development, I wor
 
 [![Trophies](https://raw.githubusercontent.com/qhanson55/qhanson55/output-extras/github-trophies.svg)](https://github.com/qhanson55/qhanson55)
 
-| [![Quinn's GitHub stats](https://raw.githubusercontent.com/qhanson55/qhanson55/output-extras/github-stats.svg)](https://github.com/qhanson55/qhanson55) | [![GitHub Streak](https://raw.githubusercontent.com/qhanson55/qhanson55/output-extras/github-streak-stats.svg)](https://github.com/qhanson55/qhanson55) |
+| [![Quinn's GitHub stats](https://raw.githubusercontent.com/qhanson55/qhanson55/output-extras/github-stats.svg)](https://github.com/qhanson55/qhanson55) | <img src="https://raw.githubusercontent.com/qhanson55/qhanson55/output-extras/github-streak.svg" width="400" alt="GitHub Streak"> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
