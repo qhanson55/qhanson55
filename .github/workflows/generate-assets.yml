@@ -1,0 +1,62 @@
+name: Generate Profile Assets
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # Runs at 12 AM PT (7 AM UTC) daily
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Generate Images
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Generate 3D Profile SVG
+        uses: yoshi389111/github-profile-3d-contrib@5b718734e8da645411919f0ae9ab9e7f9377158f # v0.9.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Generate GitHub Trophies
+        uses: soulteary/github-profile-trophy-action@cabefc1ce203b1ce4c03dae3335aa794aefbbb80 # v1.0.0
+        with:
+          options: 'username=${{ github.repository_owner }}&theme=nord&no-bg=true&no-frame=true&column=-1&rank=SECRET,SSS,SS,S,AAA,AA,A,B'
+          path: profile-3d-contrib/github-trophies.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub Stats
+        uses: readme-tools/github-readme-stats-action@v1 # Keep this if you prefer the readme-tools version over soulteary's
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&theme=shadow_green&hide_border=true
+          path: profile-3d-contrib/github-stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate Streak Stats
+        # uses: muhammad-fiaz/github-readme-streak-stats@4a189450bbd0e143b9ed0f649500d1bc7b8c34f1 # v1.0.1
+        # TODO: Switch back to the above once they accept my PR
+        uses: qhanson55/github-readme-streak-stats@d88cb6e9cfa625432ee56f559bc687e0e8acf749 # feat/weekly-streak
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THEME: shadow-green
+          HIDE_BORDER: "true"
+          WEEK_STREAK: "true"
+          OUTPUT_PATH: profile-3d-contrib/github-streak.svg
+
+      - name: Push SVGs to branch
+        uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4 # v5.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          target_branch: output-assets
+          build_dir: profile-3d-contrib
+          keep_history: true
+          
