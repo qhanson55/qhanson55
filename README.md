@@ -6,9 +6,9 @@ Always looking to collaborate on software or data projects involving Sports or F
 
 Fun Fact: Before switching gears (pun intended) into software development, I worked as a Heavy Equipment Mechanic... turns out diagnosing broken code isn’t that different from diagnosing a broken machine.
 
-[![3D Contributions](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/profile-3d-contrib/profile-night-green.svg)](https://github.com/yoshi389111/github-profile-3d-contrib)
+[![3D Contributions](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/profile-green-night.svg)](https://github.com/yoshi389111/github-profile-3d-contrib)
 
-[![Trophies](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/profile-3d-contrib/github-trophies.svg)](https://github.com/qhanson55/qhanson55)
+[![Trophies](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/github-trophies.svg)](https://github.com/qhanson55/qhanson55)
 
-| [![Quinn's GitHub stats](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/profile-3d-contrib/github-stats.svg)](https://github.com/qhanson55/qhanson55) | <img src="https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/profile-3d-contrib/github-streak.svg" width="400" alt="GitHub Streak"> |
+| [![Quinn's GitHub stats](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/github-stats.svg)](https://github.com/qhanson55/qhanson55) | <img src="https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/github-streak.svg" width="400" alt="GitHub Streak"> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
