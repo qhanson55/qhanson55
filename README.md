@@ -6,7 +6,7 @@ Always looking to collaborate on software or data projects involving Sports or F
 
 Fun Fact: Before switching gears (pun intended) into software development, I worked as a Heavy Equipment Mechanic... turns out diagnosing broken code isn’t that different from diagnosing a broken machine.
 
-[![3D Contributions](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/profile-green-night.svg)](https://github.com/yoshi389111/github-profile-3d-contrib)
+[![3D Contributions](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/profile-night-green.svg)](https://github.com/yoshi389111/github-profile-3d-contrib)
 
 [![Trophies](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/github-trophies.svg)](https://github.com/qhanson55/qhanson55)
 
