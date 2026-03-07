@@ -16,26 +16,11 @@ jobs:
 
       # Generates the GitHub Profile Trophies
       - name: Generate GitHub Trophies
-        uses: soulteary/profile-trophy-action@main
+        uses: soulteary/github-profile-trophy-action@v1.0.0
         with:
-          username: ${{ github.repository_owner }}
+          options: 'username=${{ github.repository_owner }}&theme=nord&no-bg=true&no-frame=true&column=-1&rank=SECRET,SSS,SS,S,AAA,AA,A,B'
+          path: generated/github-trophies.svg 
           token: ${{ secrets.GITHUB_TOKEN }}
-          theme: nord
-          no-bg: true
-          no-frame: true
-          column: -1
-          output: generated/github-trophies.svg
-
-      # Generates the Streak Stats SVG
-      - name: Generate Streak Stats
-        uses: muhammad-fiaz/github-readme-streak-stats@v1.0.1
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          THEME: shadow-green
-          HIDE_BORDER: "true"
-          MODE: weekly
-          OUTPUT_PATH: generated/github-streak-stats.svg
 
       # Generates the classic GitHub Readme Stats SVG
       - name: Generate GitHub Stats
@@ -45,6 +30,18 @@ jobs:
           options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&theme=shadow_green&hide_border=true
           path: generated/github-stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Generates the Streak Stats SVG
+      - name: Generate Streak Stats
+        # uses: muhammad-fiaz/github-readme-streak-stats@v1.0.1 # TODO: Switch back to this once they accept my PR is accepted
+        uses: qhanson55/github-readme-streak-stats@feat/weekly-streak
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THEME: shadow-green
+          HIDE_BORDER: "true"
+          WEEK_STREAK: "true"
+          OUTPUT_PATH: generated/github-streak.svg
 
       - name: Push generated SVGs to branch
         uses: crazy-max/ghaction-github-pages@v4.2.0
