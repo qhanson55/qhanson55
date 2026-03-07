@@ -4,7 +4,7 @@ Currently developing applications at BC Public Service (CSBC) for improving and 
 
 Always looking to collaborate on software or data projects involving Sports or Fantasy Sports, especially if it means gaining an edge or discovering hidden insights.
 
-Fun Fact: Before switching gears (pun intended) into software development, I worked as a Heavy Equipment Mechanic... turns out diagnosing broken code isn’t that different from diagnosing a broken machine.
+Fun Fact: Before switching gears (pun intended) into software development, I worked as a Heavy Equipment Mechanic... turns out diagnosing broken code isn’t that different from diagnosing broken machines.
 
 | [![Quinn's GitHub stats](https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/github-stats.svg)](https://github.com/qhanson55/qhanson55) | <img src="https://raw.githubusercontent.com/qhanson55/qhanson55/output-assets/github-streak.svg" width="400" alt="GitHub Streak"> |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
