@@ -32,7 +32,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate GitHub Stats
-        uses: readme-tools/github-readme-stats-action@v1 # Keep this if you prefer the readme-tools version over soulteary's
+        uses: readme-tools/github-readme-stats-action@v2 # Keep this if you prefer the readme-tools version over soulteary's
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&theme=shadow_green&hide_border=true
