@@ -25,7 +25,7 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
 
       - name: Generate GitHub Trophies
-        uses: soulteary/github-profile-trophy-action@cabefc1ce203b1ce4c03dae3335aa794aefbbb80 # v1.0.0
+        uses: soulteary/github-profile-trophy-action@75b2f7c6a6754a6d4cbfc0b179c97f124a540dcb # v1.2.1
         with:
           options: 'username=${{ github.repository_owner }}&theme=nord&no-bg=true&no-frame=true&column=-1&rank=SECRET,SSS,SS,S,AAA,AA,A,B'
           path: profile-3d-contrib/github-trophies.svg
